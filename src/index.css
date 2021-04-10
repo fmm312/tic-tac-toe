@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap');
-
 body {
     font-family: 'Open Sans', sans-serif;
     margin: 20px;
     display: flex;
     justify-content: center;
-    background-color: #ffb339;
+    background-color: #2b1f31;
+    font-weight: 400;
   }
   
   ol, ul {
@@ -20,7 +19,7 @@ body {
   
   .status {
     margin-bottom: 20px;
-    margin-top: 50px;
+    margin-top: 45px;
     text-align: center;
     font-size: 34px;
     color: #fff;
@@ -30,10 +29,10 @@ body {
   }
   
   .square {
-    background: #fff;
-    border: 1px solid #ffb339;
+    background: #f2f2f2;
+    border: 3px solid transparent;
     float: left;
-    font-size: 58px;
+    font-size: 70px;
     font-weight: 800;
     line-height: 34px;
     height: 120px;
@@ -41,10 +40,12 @@ body {
     margin-right: -1px;
     margin-top: -1px;
     padding: 0;
-    text-align: center;  
-    color: #ffb339;
+    text-align: center;
     border-radius: 10px;
-    margin: 3px;
+    margin: 4px;
+    font-family: 'Permanent Marker', cursive;
+    cursor: pointer;
+    user-select: none;
   }
   
   .square:focus {

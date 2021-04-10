@@ -1,10 +1,6 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import './index.css'
-
-
-// ========================================
-//Board Component
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
 class Board extends React.Component {
     constructor(props) {
         super(props)
@@ -62,10 +58,6 @@ class Board extends React.Component {
         );
     }
 }
-
-
-
-//Square Component
 class Square extends React.Component {
     constructor(props) {
         super(props)      
@@ -76,17 +68,17 @@ class Square extends React.Component {
 
     render() {
       return (
-        <button className="square" onClick={() => this.props.onClick()}>
+        <button 
+            className="square" 
+            onClick={() => this.props.onClick()}
+            style={this.props.value === 'O' ? { color: '#5fb9b0' } : { color: '#bef992' }}
+        >
             {this.props.value}
         </button>
       );
     }
 }
 
-
-
-// ========================================
-//Checked Winner 
 const calculateWinner = (squares) => {
     const lines =[
         [0, 1, 2],
@@ -106,9 +98,6 @@ const calculateWinner = (squares) => {
     }
     return null;
 }
-
-  
-// ========================================
 
 ReactDOM.render(
     <Board />,
